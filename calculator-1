@@ -1,0 +1,19 @@
+
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+def multiply(i, j):
+	if i in range (2, 9) and j in range (2, 9):
+		print (i * j)
+	else:
+		if i not in range (2, 9):
+			print ("wrong x")
+		if j not in range (2,9):
+			print ("wrong y")
+	if (i * j) <= 50:
+		return True
+	else:
+		print("the product is too large ")
+
+
+multiply(x,y)
